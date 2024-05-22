@@ -3054,7 +3054,7 @@ func (builder *ChildrenFilterBuilder) Build() *ChildrenFilter {
 type Condition struct {
 	FieldName *string  `json:"field_name,omitempty"` // 筛选条件的左值，值为字段的名称
 	Operator  *string  `json:"operator,omitempty"`   // 条件运算符
-	Value     []string `json:"value,omitempty"`      // 目标值
+	Value     []string `json:"value"`      // 目标值
 }
 
 type ConditionBuilder struct {
